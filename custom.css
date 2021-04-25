@@ -96,7 +96,9 @@ html,
 body {
   line-height: var(--ct-line-height);
   font-size: var(--ct-text-size);
+  font-family: var(--ls-font-family);
 }
+
 
 html[data-theme="light"] {
   background: var(--ls-primary-background-color);
@@ -832,6 +834,11 @@ hr {
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
   margin-left: -1rem;
+}
+
+
+#head .fade-link {
+  font-size: 0.875rem;
 }
 
 textarea {
