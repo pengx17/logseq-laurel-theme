@@ -1652,8 +1652,8 @@ html[data-theme="light"] {
 
   --ct-topbar-background: rgba(255, 255, 255, 0.6);
 
-  --ls-scrollbar-foreground-color: #ccc;
-  --ls-scrollbar-background-color: #ececec;
+  --ls-scrollbar-foreground-color: rgba(122, 122, 122, 0.6);
+  --ls-scrollbar-background-color: rgba(236, 236, 236, 0.6);
   --ls-scrollbar-thumb-hover-color: #a8a8a8;
 
   --ct-topbar-border: 1px solid #eeee;
