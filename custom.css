@@ -99,7 +99,6 @@ body {
   font-family: var(--ls-font-family);
 }
 
-
 html[data-theme="light"] {
   background: var(--ls-primary-background-color);
 }
@@ -691,7 +690,6 @@ html.is-electron.is-mac .cp__right-sidebar-topbar {
   backdrop-filter: var(--ct-topbar-backdrop);
 }
 
-
 .sidebar-item.content > div > div:first-of-type + div {
   margin-top: 1.5rem;
 }
@@ -835,7 +833,6 @@ hr {
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
   margin-left: -1rem;
 }
-
 
 #head .fade-link {
   font-size: 0.875rem;
