@@ -682,11 +682,16 @@ html.is-electron.is-mac .cp__right-sidebar-topbar {
 /* title */
 .sidebar-item.content > div > div:first-of-type {
   position: sticky;
-  top: 48px;
-  padding: 10px 16px;
-  margin: -16px -16px 4px -16px;
+  top: 3rem;
+  padding: 1rem;
+  margin: -1rem;
   z-index: 10;
   backdrop-filter: var(--ct-topbar-backdrop);
+}
+
+
+.sidebar-item.content > div > div:first-of-type + div {
+  margin-top: 1.5rem;
 }
 
 html.is-electron.is-mac .sidebar-item.content > div > div:first-of-type {
