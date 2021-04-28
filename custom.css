@@ -490,6 +490,7 @@ a.tag {
   vertical-align: inherit;
   line-height: 1;
   padding: var(--ct-tag-padding);
+  font-family: var(--ct-page-title-font-family);
 }
 
 a.tag:hover {
@@ -559,11 +560,11 @@ a.tag:hover {
 /* highlight */
 
 mark {
+  font-family: var(--ct-page-title-font-family);;
   border-radius: var(--ct-mark-border-radius);
   background: var(--ct-mark-background);
   color: var(--ct-mark-color);
   font-size: inherit;
-  padding: 1px 4px;
 }
 
 /* inline code */
@@ -841,6 +842,11 @@ hr {
 
 textarea {
   caret-color: var(--ct-caret-color);
+}
+
+/* Remove focus ring in ff */
+textarea:focus-visible {
+  outline: none;
 }
 
 ::selection {
