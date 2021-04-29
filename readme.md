@@ -1,4 +1,4 @@
-# My Logseq theme
+# An forked version of logseq-clean-themes for my needs
 
 My [Logseq](https://logseq.com) theme modified on the work of @PiotrSss's [clean-themes](https://github.com/PiotrSss/logseq-clean-themes).
 
