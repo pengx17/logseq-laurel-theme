@@ -1738,6 +1738,10 @@ html.is-electron .cp__header {
   max-width: -webkit-fill-available;
 }
 
+.white-theme .image-resize {
+  filter: brightness(1);
+}
+
 .dark-theme .image-resize {
   filter: brightness(0.8);
 }
