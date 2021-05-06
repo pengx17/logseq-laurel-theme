@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=block");
 
 /***************************************************************
@@ -82,7 +82,7 @@
 
   --ct-tag-shadow: 1px 1px rgb(136, 136, 136);
 
-  --ct-topbar-backdrop: blur(40px) saturate(0.7);
+  --ct-topbar-backdrop: blur(20px) saturate(180%);
 }
 
 :root.is-mac {
@@ -158,6 +158,29 @@ html[data-theme="dark"] {
   > span
   + a {
   margin-top: 2px;
+}
+
+html.is-electron.is-mac .cp__header:before {
+  
+}
+
+.cp__header,
+.cp__right-sidebar-topbar {
+  backdrop-filter: var(--ct-topbar-backdrop);
+  background-color: var(--ct-topbar-background) !important;
+}
+
+.cp__header::after,
+.cp__right-sidebar-topbar::after {
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.16);
+  display: block;
+  content: "";
 }
 
 /***************************************************************
@@ -639,12 +662,6 @@ html.is-electron.is-mac .cp__right-sidebar-topbar {
   width: calc(100% + 6px);
 }
 
-.cp__right-sidebar-topbar {
-  border-bottom: var(--ct-topbar-border);
-  backdrop-filter: var(--ct-topbar-backdrop);
-  background-color: var(--ct-topbar-background);
-}
-
 .cp__right-sidebar-inner {
   --sidebar-padding: 1rem;
 }
@@ -722,10 +739,6 @@ html.is-electron.is-mac .sidebar-item.content > div > div:first-of-type {
 
 .cp__sidebar-help-btn {
   filter: grayscale(1);
-}
-
-.cp__right-sidebar-settings {
-  margin-bottom: 0;
 }
 
 .cp__right-sidebar-settings-btn {
@@ -1363,7 +1376,7 @@ html[data-theme="dark"] {
   --ct-mobile-editor-toolbar-color: var(--ct-page-font-color);
 
   --ct-topbar-background: rgba(28, 28, 28, 0.6);
-  --ct-topbar-border: 1px solid #3333;
+  --ct-topbar-border-color: rgba(0, 0, 0, 0.16);
 }
 
 /***************************************************************
@@ -1659,7 +1672,7 @@ html[data-theme="light"] {
   --ls-scrollbar-background-color: rgba(236, 236, 236, 0.6);
   --ls-scrollbar-thumb-hover-color: #a8a8a8;
 
-  --ct-topbar-border: 1px solid #eeee;
+  --ct-topbar-border-color: rgba(0, 0, 0, 0.16);
 }
 
 /***************************************************************
@@ -1713,12 +1726,6 @@ p {
   visibility: hidden;
 }
 
-.cp__header {
-  border-bottom: var(--ct-topbar-border);
-  backdrop-filter: var(--ct-topbar-backdrop);
-  background-color: var(--ct-topbar-background) !important;
-}
-
 html.is-electron .cp__header {
   height: 3rem;
 }
@@ -1763,6 +1770,7 @@ html.is-electron .cp__header {
   margin-right: 2px;
 }
 
+/* Custom tags */
 a.tag[data-ref="⭐️" i]::before,
 a.tag[data-ref="star" i]::before {
   content: "⭐️";
