@@ -1,6 +1,7 @@
 /* Credits: github.com/PiotrSss/logseq-clean-themes/blob/main/custom.css */
 
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+@import url(https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@master/code-mirror.css);
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
@@ -97,6 +98,7 @@ body {
   line-height: var(--ct-line-height);
   font-size: var(--ct-text-size);
   font-family: var(--ls-font-family);
+  overscroll-behavior-y: none;
 }
 
 html[data-theme="light"] {
@@ -560,7 +562,7 @@ a.tag:hover {
 /* highlight */
 
 mark {
-  font-family: var(--ct-page-title-font-family);;
+  font-family: var(--ct-page-title-font-family);
   border-radius: var(--ct-mark-border-radius);
   background: var(--ct-mark-background);
   color: var(--ct-mark-color);
@@ -1683,10 +1685,10 @@ p {
   margin: 0;
 }
 
-.overflow-y-auto, .cp__right-sidebar-inner {
+.overflow-y-auto,
+.cp__right-sidebar-inner {
   transform: translate3d(0, 0, 0);
 }
-
 
 /* daily note as card */
 
@@ -1843,138 +1845,4 @@ a.tag[data-ref*="facepalm" i]::before {
   content: "😑";
   margin-right: 0.2em;
   text-shadow: var(--ct-tag-shadow);
-}
-
-/***************************************************************
-**************************** Code mirror ***********************
-***************************************************************/
-
-/* Using two .cm-s-default to force override */
-.cm-s-default.CodeMirror {
-  background-color: #263238;
-  color: #eeffff;
-}
-
-.cm-s-default .CodeMirror-gutters {
-  background: #263238;
-  color: #546e7a;
-  border: none;
-}
-
-.cm-s-default .CodeMirror-guttermarker,
-.cm-s-default .CodeMirror-guttermarker-subtle,
-.cm-s-default .CodeMirror-linenumber {
-  color: #546e7a;
-}
-
-.cm-s-default .CodeMirror-cursor {
-  border-left: 1px solid #ffcc00;
-}
-
-.cm-s-default div.CodeMirror-selected {
-  background: rgba(128, 203, 196, 0.2);
-}
-
-.white-theme .cm-s-default.CodeMirror-focused div.CodeMirror-selected {
-  background: rgba(128, 203, 196, 0.2);
-}
-
-.cm-s-default .CodeMirror-line::selection,
-.cm-s-default .CodeMirror-line > span::selection,
-.white-theme .cm-s-default .CodeMirror-line > span > span::selection {
-  background: rgba(128, 203, 196, 0.2);
-}
-
-.cm-s-default .CodeMirror-line::-moz-selection,
-.cm-s-default .CodeMirror-line > span::-moz-selection,
-.white-theme .cm-s-default .CodeMirror-line > span > span::-moz-selection {
-  background: rgba(128, 203, 196, 0.2);
-}
-
-.cm-s-default .CodeMirror-activeline-background {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.cm-s-default .cm-keyword {
-  color: #c792ea;
-}
-
-.cm-s-default .cm-operator {
-  color: #89ddff;
-}
-
-.cm-s-default .cm-variable-2 {
-  color: #eeffff;
-}
-
-.cm-s-default .cm-variable-3,
-.cm-s-default .cm-type {
-  color: #f07178;
-}
-
-.cm-s-default .cm-builtin {
-  color: #ffcb6b;
-}
-
-.cm-s-default .cm-atom {
-  color: #f78c6c;
-}
-
-.cm-s-default .cm-number {
-  color: #ff5370;
-}
-
-.cm-s-default .cm-def {
-  color: #82aaff;
-}
-
-.cm-s-default .cm-string {
-  color: #c3e88d;
-}
-
-.cm-s-default .cm-string-2 {
-  color: #f07178;
-}
-
-.cm-s-default .cm-comment {
-  color: #546e7a;
-}
-
-.cm-s-default .cm-variable {
-  color: #f07178;
-}
-
-.cm-s-default .cm-tag {
-  color: #ff5370;
-}
-
-.cm-s-default .cm-meta {
-  color: #ffcb6b;
-}
-
-.cm-s-default .cm-attribute {
-  color: #c792ea;
-}
-
-.cm-s-default .cm-property {
-  color: #c792ea;
-}
-
-.cm-s-default .cm-qualifier {
-  color: #decb6b;
-}
-
-.cm-s-default .cm-variable-3,
-.cm-s-default .cm-type {
-  color: #decb6b;
-}
-
-.cm-s-default .cm-error {
-  color: rgba(255, 255, 255, 1);
-  background-color: #ff5370;
-}
-
-.cm-s-default .CodeMirror-matchingbracket {
-  text-decoration: underline;
-  color: white !important;
 }
