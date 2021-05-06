@@ -1151,7 +1151,7 @@ html[data-theme="dark"] {
 
   --ct-main-view-border: 2px solid #444;
 
-  --ct-page-references-background: #000000;
+  --ct-page-references-background: #292929;
   --ct-page-references-border: none;
 
   --ct-page-properties-background: var(--ct-page-references-background);
@@ -1435,7 +1435,7 @@ html[data-theme="light"] {
   --ct-file-path-color: #909d74;
   --ct-file-path-color-hover: #a0ae83;
 
-  --ct-page-references-background: #fff;
+  --ct-page-references-background: #eaeaea;
   --ct-page-references-border: none;
 
   --ct-page-properties-background: #eee;
