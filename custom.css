@@ -337,10 +337,6 @@ a.title h1.title {
   color: var(--ct-block-arrow-color);
 }
 
-.block-content {
-  margin-right: 1em;
-} 
-
 /* blockquote */
 
 blockquote {
@@ -877,8 +873,8 @@ textarea:focus-visible {
 }
 
 .time-spent {
-  top: 2px !important;
-  right: -2.5em !important;
+  position: relative;
+  align-self: center;
 }
 
 /* journal border */

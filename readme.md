@@ -5,7 +5,7 @@ My [Logseq](https://logseq.com) theme modified on the work of @PiotrSss's [clean
 Usage:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@1.2.0/custom.css');
+@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@1.2.1/custom.css');
 ```
 
 # Screenshots
