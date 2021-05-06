@@ -1,0 +1,130 @@
+
+/* Using two .cm-s-default to force override */
+.cm-s-default.CodeMirror {
+  background-color: #263238;
+  color: #eeffff;
+}
+
+.cm-s-default .CodeMirror-gutters {
+  background: #263238;
+  color: #546e7a;
+  border: none;
+}
+
+.cm-s-default .CodeMirror-guttermarker,
+.cm-s-default .CodeMirror-guttermarker-subtle,
+.cm-s-default .CodeMirror-linenumber {
+  color: #546e7a;
+}
+
+.cm-s-default .CodeMirror-cursor {
+  border-left: 1px solid #ffcc00;
+}
+
+.cm-s-default div.CodeMirror-selected {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.white-theme .cm-s-default.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-default .CodeMirror-line::selection,
+.cm-s-default .CodeMirror-line > span::selection,
+.white-theme .cm-s-default .CodeMirror-line > span > span::selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-default .CodeMirror-line::-moz-selection,
+.cm-s-default .CodeMirror-line > span::-moz-selection,
+.white-theme .cm-s-default .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-default .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cm-s-default .cm-keyword {
+  color: #c792ea;
+}
+
+.cm-s-default .cm-operator {
+  color: #89ddff;
+}
+
+.cm-s-default .cm-variable-2 {
+  color: #eeffff;
+}
+
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
+  color: #f07178;
+}
+
+.cm-s-default .cm-builtin {
+  color: #ffcb6b;
+}
+
+.cm-s-default .cm-atom {
+  color: #f78c6c;
+}
+
+.cm-s-default .cm-number {
+  color: #ff5370;
+}
+
+.cm-s-default .cm-def {
+  color: #82aaff;
+}
+
+.cm-s-default .cm-string {
+  color: #c3e88d;
+}
+
+.cm-s-default .cm-string-2 {
+  color: #f07178;
+}
+
+.cm-s-default .cm-comment {
+  color: #546e7a;
+}
+
+.cm-s-default .cm-variable {
+  color: #f07178;
+}
+
+.cm-s-default .cm-tag {
+  color: #ff5370;
+}
+
+.cm-s-default .cm-meta {
+  color: #ffcb6b;
+}
+
+.cm-s-default .cm-attribute {
+  color: #c792ea;
+}
+
+.cm-s-default .cm-property {
+  color: #c792ea;
+}
+
+.cm-s-default .cm-qualifier {
+  color: #decb6b;
+}
+
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
+  color: #decb6b;
+}
+
+.cm-s-default .cm-error {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff5370;
+}
+
+.cm-s-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
