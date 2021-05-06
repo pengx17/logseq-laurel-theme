@@ -4,7 +4,8 @@
 @import url(https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@master/code-mirror.css);
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=block");
 
 /***************************************************************
@@ -20,8 +21,8 @@
 
   --ct-page-border-radius: 5px;
 
-  --ct-font-family: Roboto, Asap, sans-serif;
-  --ct-page-title-font-family: Asap, sans-serif;
+  --ct-font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+  --ct-page-title-font-family: Asap, "Noto Sans SC", sans-serif;
   --ct-text-size: 1em;
   --ct-line-height: 1.5;
   --ls-font-family: var(--ct-font-family);
@@ -85,8 +86,7 @@
 }
 
 :root.is-mac {
-  --ct-font-family: Overpass, Roboto, sans-serif;
-  --ct-page-title-font-family: Asap, sans-serif;
+  --ct-font-family: Overpass, "Noto Sans SC", sans-serif;
 }
 
 * {
@@ -107,12 +107,6 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   background: var(--ls-primary-background-color);
-}
-
-.theme-inner {
-  background: var(--ct-background-picture, transparent)
-    var(--ct-background-picture-position, center center) fixed;
-  background-size: cover;
 }
 
 .cp__sidebar-main-content {
