@@ -164,10 +164,6 @@ html[data-theme="dark"] {
   margin-top: 2px;
 }
 
-html.is-electron.is-mac .cp__header:before {
-  
-}
-
 .cp__header,
 .cp__right-sidebar-topbar {
   backdrop-filter: var(--ct-topbar-backdrop);
@@ -1366,7 +1362,7 @@ html[data-theme="dark"] {
 
   --ct-settings-overlay-background: var(--ct-page-properties-background);
   --ct-settings-background: #1e1e1e;
-  --ct-settings-switcher-background: var(--ls-scrollbar-foreground-color);
+  --ct-settings-switcher-background: #a0ca79;
   --ct-settings-select-background: var(--ls-scrollbar-foreground-color);
   --ct-settings-select-color: rgb(255 255 255 / 70%);
   --ct-settings-input-border: 1px solid var(--ls-scrollbar-foreground-color);
