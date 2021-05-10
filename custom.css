@@ -1362,7 +1362,7 @@ html[data-theme="dark"] {
 
   --ct-settings-overlay-background: var(--ct-page-properties-background);
   --ct-settings-background: #1e1e1e;
-  --ct-settings-switcher-background: #a0ca79;
+  --ct-settings-switcher-background: var(--ls-link-ref-text-color);
   --ct-settings-select-background: var(--ls-scrollbar-foreground-color);
   --ct-settings-select-color: rgb(255 255 255 / 70%);
   --ct-settings-input-border: 1px solid var(--ls-scrollbar-foreground-color);
@@ -1654,7 +1654,7 @@ html[data-theme="light"] {
 
   --ct-settings-overlay-background: #d5d5d5;
   --ct-settings-background: #fdfdfd;
-  --ct-settings-switcher-background: var(--ls-scrollbar-foreground-color);
+  --ct-settings-switcher-background: var(--ls-link-ref-text-color);
   --ct-settings-select-background: var(--ls-scrollbar-foreground-color);
   --ct-settings-select-color: #4f4f4f;
   --ct-settings-input-border: 1px solid var(--ls-scrollbar-foreground-color);
