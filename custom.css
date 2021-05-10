@@ -131,11 +131,18 @@ html[data-theme="dark"] {
 
 .absolute-modal {
   width: fit-content;
+  overflow: hidden;
   min-width: 0 !important;
+  max-height: none !important;
 }
 
 .datepicker {
   margin-top: 0;
+}
+
+/* fix slash command no scrollbar issue */
+#ui__ac-inner.hide-scrollbar::-webkit-scrollbar {
+  display: initial;
 }
 
 /* weird vertical border on the left side of the screen */
