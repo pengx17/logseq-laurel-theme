@@ -18,7 +18,7 @@ The easiest way to adopt this theme is to use jsDelivr CDN and add it to your `c
 @import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.4.2/custom.css');
 ```
 
-Alternatively, you may also install this theme as a Logseq Plugin
+Alternatively once Logseq shipped plugins integration, you may also install this theme as a Logseq Plugin.
 
 <img src="plugin.png" height="300"/>
 
