@@ -876,6 +876,7 @@ div#journals::before {
   font-size: 1.5em;
   z-index: 9;
   text-shadow: 0 0 1px;
+  margin-right: -0.5em;
 }
 
 ::selection {
