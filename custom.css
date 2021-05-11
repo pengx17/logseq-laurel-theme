@@ -516,6 +516,7 @@ a.tag {
   vertical-align: inherit;
   line-height: 1;
   padding: var(--ct-tag-padding);
+  padding-bottom: 1px;
   font-family: var(--ct-page-title-font-family);
 }
 
@@ -1143,6 +1144,7 @@ html[data-theme="dark"] {
   --ct-background: #1e1e1e;
   --ls-primary-background-color: var(--ct-background);
   --ls-secondary-background-color: #333;
+  --ls-tertiary-background-color: #2c3622;
 
   --ct-desktop-nav-buttons-color: #404040;
 
