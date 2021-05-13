@@ -89,10 +89,6 @@
   --ct-font-family: Overpass, "Noto Sans SC", sans-serif;
 }
 
-* {
-  transition: none !important;
-}
-
 html,
 body {
   line-height: var(--ct-line-height);

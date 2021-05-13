@@ -15,7 +15,7 @@ My [Logseq](https://logseq.com) theme based on the work of @PiotrSss's [clean-th
 The easiest way to adopt this theme is to use jsDelivr CDN and add it to your `custom.css`
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.4.4/custom.css');
+@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.4.5/custom.css');
 ```
 
 Alternatively once Logseq shipped plugins integration, you may also install this theme as a Logseq Plugin.
