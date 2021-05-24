@@ -1111,7 +1111,7 @@ html[data-theme="dark"] {
   
   --ct-background: #272C35;
   --ls-primary-background-color: var(--ct-background);
-  --ls-secondary-background-color: #333;
+  --ls-secondary-background-color: #343b49;
   --ls-tertiary-background-color: #343b49;
 
   --ct-desktop-nav-buttons-color: #404040;
@@ -1374,7 +1374,7 @@ html[data-theme="dark"] {
   --ct-mobile-editor-toolbar-background: var(--ct-background);
   --ct-mobile-editor-toolbar-color: var(--ct-page-font-color);
 
-  --ct-topbar-background: rgba(28, 28, 28, 0.6);
+  --ct-topbar-background: var(--ct-background);
   --ct-topbar-border-color: rgba(0, 0, 0, 0.16);
 }
 
@@ -1753,6 +1753,14 @@ html.is-electron .cp__header {
 
 .dark-theme .image-resize {
   filter: brightness(0.8);
+}
+
+/* Fix popup padding issue */
+.tippy-tooltip-content > .tippy-wrapper {
+  padding: 0 1em;
+  padding-bottom: 0 !important;
+  width: fit-content !important;
+  max-width: 800px;
 }
 
 /*
