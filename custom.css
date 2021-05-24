@@ -1784,20 +1784,64 @@ html.is-electron .cp__header {
   filter: brightness(0.8);
 }
 
-.priority[href="#/page/A" i]::before {
+/*
+|xxxxxxxxxxxxxxxxxxxxxxxxxx|
+|xx|     PRIORITIES     |xx|
+|xxxxxxxxxxxxxxxxxxxxxxxxxx|
+*/
+
+a[priority],
+a.priority {
+    font-size: 15px;
+}
+
+a[priority="A"]:before,
+a.priority[href="#/page/A" i]:before {
   content: "🔴";
   margin-right: 2px;
 }
 
-.priority[href="#/page/B" i]::before {
-  content: "🟠";
-  margin-right: 2px;
-}
-
-.priority[href="#/page/C" i]::before {
+a[priority="B"]:before,
+a.priority[href="#/page/B" i]:before {
   content: "🟡";
   margin-right: 2px;
 }
+
+a[priority="C"]:before,
+a.priority[href="#/page/C" i]:before {
+  content: "🟢";
+  margin-right: 2px;
+}
+
+a[priority]:before,
+a.priority:before {
+    border-radius: 50%;
+    color: var(--ls-primary-text-color);
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    width: 1.2rem;
+}
+
+.Tooltip__label {
+    --arrow-size: 0px;
+    background-color: var(--ls-primary-background-color);
+    border: 1px solid grey;
+    font-size: 1rem;
+    left: -2px;
+    padding: 0 2px;
+    top: -2px;
+    width: max-content;
+}
+
+.Tooltip__label ul {
+    margin-left: 0;
+}
+
+/* ============= PRIORITIES ENDS ============= */
 
 /* Custom tags */
 a.tag[data-ref="⭐️" i]::before,
