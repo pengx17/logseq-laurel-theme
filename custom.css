@@ -4,7 +4,6 @@
 @import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@master/code-mirror.css");
 @import url(https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=block");
 
@@ -21,7 +20,7 @@
 
   --ct-page-border-radius: 5px;
 
-  --ct-font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+  --ct-font-family: "Noto Sans SC", sans-serif;
   --ct-page-title-font-family: Asap, "Noto Sans SC", sans-serif;
   --ct-text-size: 1em;
   --ct-line-height: 1.5;
@@ -82,7 +81,7 @@
 
   --ct-tag-shadow: 1px 1px rgb(136, 136, 136);
 
-  --ct-topbar-backdrop: blur(20px) saturate(180%);
+  --ct-topbar-backdrop: blur(20px);
 }
 
 :root.is-mac {
@@ -95,13 +94,6 @@ body {
   font-size: var(--ct-text-size);
   font-family: var(--ls-font-family);
   overscroll-behavior-y: none;
-}
-
-html[data-theme="light"] {
-  background: var(--ls-primary-background-color);
-}
-
-html[data-theme="dark"] {
   background: var(--ls-primary-background-color);
 }
 
@@ -658,11 +650,6 @@ mark {
 ************************ RIGHT SIDEBAR *************************
 ***************************************************************/
 
-html.is-electron.is-mac .cp__right-sidebar-topbar {
-  height: calc(2.2rem + var(--frame-top-height));
-  padding-top: var(--frame-top-height);
-}
-
 #right-sidebar-container {
   width: calc(100% + 6px);
 }
@@ -712,10 +699,6 @@ html.is-electron.is-mac .cp__right-sidebar-topbar {
 
 .sidebar-item.content > div > div:first-of-type + div {
   margin-top: 1.5rem;
-}
-
-html.is-electron.is-mac .sidebar-item.content > div > div:first-of-type {
-  top: 58px;
 }
 
 .cp__right-sidebar.is-open {
@@ -1005,7 +988,7 @@ tr {
 }
 
 .ui__modal-panel {
-  background: var(--ct-rename-background, #1e1e1e);
+  background: var(--ct-rename-background, #272C35);
 }
 
 #modal-headline {
@@ -1126,10 +1109,10 @@ html[data-theme="dark"] {
   --ls-link-ref-text-hover-color: var(--ct-page-reference-color-hover);
   --ls-primary-text-color: var(--ct-page-font-color);
   
-  --ct-background: #1e1e1e;
+  --ct-background: #272C35;
   --ls-primary-background-color: var(--ct-background);
   --ls-secondary-background-color: #333;
-  --ls-tertiary-background-color: #2c3622;
+  --ls-tertiary-background-color: #343b49;
 
   --ct-desktop-nav-buttons-color: #404040;
 
@@ -1141,11 +1124,11 @@ html[data-theme="dark"] {
   --ct-top-right-3dots-icon-color: var(--ct-desktop-nav-buttons-color);
 
   --ct-search-icon-color: #a0ca79;
-  --ct-search-field-background: #222;
+  --ct-search-field-background: var(--ct-background);
   --ct-search-field-background-focus: var(--ct-search-field-background);
   --ct-search-field-text-color: #d5d5d5;
 
-  --ct-page-background: #222;
+  --ct-page-background: var(--ct-background);
   --ct-page-box-shadow: none;
 
   --ct-page-font-color: #bbb;
@@ -1161,7 +1144,7 @@ html[data-theme="dark"] {
 
   --ct-main-view-border: 2px solid #444;
 
-  --ct-page-references-background: #292929;
+  --ct-page-references-background: #2B313D;
   --ct-page-references-border: none;
 
   --ct-page-properties-background: var(--ct-page-references-background);
@@ -1317,7 +1300,7 @@ html[data-theme="dark"] {
   --ct-sidebar-tabs-color: #5a5a5a;
   --ct-sidebar-close-arrow-color: var(--ct-block-arrow-color);
   --ct-sidebar-font-color: var(--ct-page-font-color);
-  --ct-sidebar-item-background: rgba(34, 34, 34, 0.6);
+  --ct-sidebar-item-background: var(--ct-background);
   --ct-sidebar-item-box-shadow: var(--ct-page-box-shadow);
   --ct-sidebar-item-title-color: var(--ct-page-font-color);
   --ct-sidebar-item-title-text-shadow: var(--ct-page-title-text-shadow);
@@ -1353,7 +1336,7 @@ html[data-theme="dark"] {
 
   --ct-code-block-background: #292929;
   --ct-code-block-color: #e1e1e1;
-  --ct-code-block-line-numbers-background: #1e1e1e;
+  --ct-code-block-line-numbers-background: #272C35;
   --ct-code-block-lang-color: #6f6f6f;
   --ct-code-block-lang-background: #242424;
 
@@ -1361,12 +1344,12 @@ html[data-theme="dark"] {
   --ct-table-head-color: var(--ct-page-font-color);
   --ct-table-row-odd-bg: #252525;
   --ct-table-row-odd-color: var(--ct-page-font-color);
-  --ct-table-row-even-bg: #1e1e1e;
+  --ct-table-row-even-bg: #272C35;
   --ct-table-row-even-color: var(--ct-page-font-color);
   --ct-table-head-border-bottom: 2px solid #333;
 
   --ct-settings-overlay-background: var(--ct-page-properties-background);
-  --ct-settings-background: #1e1e1e;
+  --ct-settings-background: #272C35;
   --ct-settings-switcher-background: var(--ls-link-ref-text-color);
   --ct-settings-select-background: var(--ls-scrollbar-foreground-color);
   --ct-settings-select-color: rgb(255 255 255 / 70%);
@@ -1378,17 +1361,17 @@ html[data-theme="dark"] {
   --ct-rename-background: var(--ct-settings-background);
   --ct-rename-header-color: #d5d5d5;
   --ct-rename-input-color: #fff;
-  --ct-rename-cancel-background: #222;
+  --ct-rename-cancel-background: var(--ct-background);;
   --ct-rename-cancel-color: #d5d5d5;
 
-  --ct-mobile-head-background: #1e1e1e;
+  --ct-mobile-head-background: #272C35;
   --ct-mobile-head-menu-icon-color: var(--ct-page-font-color);
-  --ct-mobile-left-sidebar-background: #1e1e1e;
+  --ct-mobile-left-sidebar-background: #272C35;
   --ct-mobile-sidebar-repo-name-color: var(--ct-page-reference-color);
   --ct-mobile-close-sidebar-button-color: var(--ct-page-reference-color);
   --ct-mobile-menu-color: var(--ct-page-reference-color);
   --ct-mobile-menu-separator-background: var(--ct-settings-hr-color);
-  --ct-mobile-editor-toolbar-background: #222;
+  --ct-mobile-editor-toolbar-background: var(--ct-background);
   --ct-mobile-editor-toolbar-color: var(--ct-page-font-color);
 
   --ct-topbar-background: rgba(28, 28, 28, 0.6);
@@ -1894,18 +1877,6 @@ a.tag[data-ref="Read Later" i]::before {
 
 a.tag[data-ref="learn new tech" i]::before {
   content: "⚙️";
-  margin-right: 0.2em;
-  text-shadow: var(--ct-tag-shadow);
-}
-
-a.tag[data-ref="卷" i]::before {
-  content: "🧻";
-  margin-right: 0.2em;
-  text-shadow: var(--ct-tag-shadow);
-}
-
-a.tag[data-ref*="facepalm" i]::before {
-  content: "😑";
   margin-right: 0.2em;
   text-shadow: var(--ct-tag-shadow);
 }
