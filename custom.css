@@ -863,18 +863,6 @@ textarea:focus-visible {
   outline: none;
 }
 
-div#journals::before {
-  content: '📅';
-  display: block;
-  position: sticky;
-  float: right;
-  top: 2.4em;
-  font-size: 1.5em;
-  z-index: 9;
-  text-shadow: 0 0 1px;
-  margin-right: -0.5em;
-}
-
 ::selection {
   background: var(--ct-text-selection-color);
   color: var(--ct-text-selection-font-color, inherit);
