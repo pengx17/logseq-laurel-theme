@@ -988,7 +988,7 @@ tr {
 }
 
 .ui__modal-panel {
-  background: var(--ct-rename-background, #272C35);
+  background: var(--ct-rename-background, #272c35);
 }
 
 #modal-headline {
@@ -1100,7 +1100,8 @@ tr {
 ****************************************************************
 ***************************************************************/
 
-.dark-theme,
+#root > .dark-theme,
+.tippy-tooltip.dark-theme,
 html[data-theme="dark"] {
   --ls-icon-color: var(--ct-title-3dots-icon-color);
   --ls-link-text-color: var(--ct-page-reference-color);
@@ -1108,8 +1109,8 @@ html[data-theme="dark"] {
   --ls-link-ref-text-color: var(--ct-page-reference-color);
   --ls-link-ref-text-hover-color: var(--ct-page-reference-color-hover);
   --ls-primary-text-color: var(--ct-page-font-color);
-  
-  --ct-background: #272C35;
+
+  --ct-background: #272c35;
   --ls-primary-background-color: var(--ct-background);
   --ls-secondary-background-color: #343b49;
   --ls-tertiary-background-color: #343b49;
@@ -1144,7 +1145,7 @@ html[data-theme="dark"] {
 
   --ct-main-view-border: 2px solid #444;
 
-  --ct-page-references-background: #2B313D;
+  --ct-page-references-background: #2b313d;
   --ct-page-references-border: none;
 
   --ct-page-properties-background: var(--ct-page-references-background);
@@ -1336,7 +1337,7 @@ html[data-theme="dark"] {
 
   --ct-code-block-background: #292929;
   --ct-code-block-color: #e1e1e1;
-  --ct-code-block-line-numbers-background: #272C35;
+  --ct-code-block-line-numbers-background: #272c35;
   --ct-code-block-lang-color: #6f6f6f;
   --ct-code-block-lang-background: #242424;
 
@@ -1344,12 +1345,12 @@ html[data-theme="dark"] {
   --ct-table-head-color: var(--ct-page-font-color);
   --ct-table-row-odd-bg: #252525;
   --ct-table-row-odd-color: var(--ct-page-font-color);
-  --ct-table-row-even-bg: #272C35;
+  --ct-table-row-even-bg: #272c35;
   --ct-table-row-even-color: var(--ct-page-font-color);
   --ct-table-head-border-bottom: 2px solid #333;
 
   --ct-settings-overlay-background: var(--ct-page-properties-background);
-  --ct-settings-background: #272C35;
+  --ct-settings-background: #272c35;
   --ct-settings-switcher-background: var(--ls-link-ref-text-color);
   --ct-settings-select-background: var(--ls-scrollbar-foreground-color);
   --ct-settings-select-color: rgb(255 255 255 / 70%);
@@ -1361,12 +1362,12 @@ html[data-theme="dark"] {
   --ct-rename-background: var(--ct-settings-background);
   --ct-rename-header-color: #d5d5d5;
   --ct-rename-input-color: #fff;
-  --ct-rename-cancel-background: var(--ct-background);;
+  --ct-rename-cancel-background: var(--ct-background);
   --ct-rename-cancel-color: #d5d5d5;
 
-  --ct-mobile-head-background: #272C35;
+  --ct-mobile-head-background: #272c35;
   --ct-mobile-head-menu-icon-color: var(--ct-page-font-color);
-  --ct-mobile-left-sidebar-background: #272C35;
+  --ct-mobile-left-sidebar-background: #272c35;
   --ct-mobile-sidebar-repo-name-color: var(--ct-page-reference-color);
   --ct-mobile-close-sidebar-button-color: var(--ct-page-reference-color);
   --ct-mobile-menu-color: var(--ct-page-reference-color);
@@ -1386,7 +1387,8 @@ html[data-theme="dark"] {
 ****************************************************************
 ***************************************************************/
 
-.white-theme,
+#root > .white-theme,
+.tippy-tooltip.white-theme,
 html[data-theme="light"] {
   --ls-icon-color: var(--ct-title-3dots-icon-color);
   --ls-link-text-color: var(--ct-page-reference-color);
@@ -1398,6 +1400,7 @@ html[data-theme="light"] {
   --ct-background: #fff;
   --ls-primary-background-color: var(--ct-background);
   --ls-secondary-background-color: #eee;
+  --ls-tertiary-background-color: #eee;
 
   --ct-desktop-nav-buttons-color: #a6a6a6;
 
@@ -1756,11 +1759,56 @@ html.is-electron .cp__header {
 }
 
 /* Fix popup padding issue */
+.tippy-tooltip {
+  padding: 0.5em 0;
+  min-width: 100px;
+}
+
 .tippy-tooltip-content > .tippy-wrapper {
-  padding: 0 1em;
-  padding-bottom: 0 !important;
+  padding: 0 !important;
+  border-radius: 4px;
   width: fit-content !important;
   max-width: 800px;
+}
+
+.tippy-tooltip-content > .tippy-wrapper.overflow-y-auto {
+  overflow: visible;
+  display: flex;
+  flex-flow: column;
+}
+
+.tippy-tooltip-content > .tippy-wrapper > .page-blocks-inner {
+  overflow: auto;
+  height: -webkit-fill-available;
+  padding: 0.5em 1em;
+  margin-top: 1.5em;
+}
+
+.tippy-tooltip-content > .tippy-wrapper > .blocks-container {
+  padding: 0 0.5em;
+}
+
+/* Page preview title */
+.tippy-wrapper > h2:first-of-type {
+  display: inline-block;
+  align-self: flex-start;
+  position: absolute;
+  left: -0.5em;
+  top: -0.75em;
+  z-index: 2;
+  padding: 5px 10px 2px 10px !important;
+  background: #789959;
+  color: var(--ct-query-header-color);
+  font-family: var(--ct-code-font-family);
+  font-style: var(--ct-inline-code-font-style) !important;
+  border-radius: var(--ct-inline-code-border-radius);
+  text-shadow: 1px 1px 0px black, 1px 1px 1px rgb(136, 136, 136);
+  box-shadow: var(--ct-sidebar-item-box-shadow);
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  white-space: nowrap;
 }
 
 /*
@@ -1771,7 +1819,7 @@ html.is-electron .cp__header {
 
 a[priority],
 a.priority {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 a[priority="A"]:before,
@@ -1794,30 +1842,30 @@ a.priority[href="#/page/C" i]:before {
 
 a[priority]:before,
 a.priority:before {
-    border-radius: 50%;
-    color: var(--ls-primary-text-color);
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 700;
-    height: 1rem;
-    line-height: 1rem;
-    text-align: center;
-    width: 1.2rem;
+  border-radius: 50%;
+  color: var(--ls-primary-text-color);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  width: 1.2rem;
 }
 
 .Tooltip__label {
-    --arrow-size: 0px;
-    background-color: var(--ls-primary-background-color);
-    border: 1px solid grey;
-    font-size: 1rem;
-    left: -2px;
-    padding: 0 2px;
-    top: -2px;
-    width: max-content;
+  --arrow-size: 0px;
+  background-color: var(--ls-primary-background-color);
+  border: 1px solid grey;
+  font-size: 1rem;
+  left: -2px;
+  padding: 0 2px;
+  top: -2px;
+  width: max-content;
 }
 
 .Tooltip__label ul {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /* ============= PRIORITIES ENDS ============= */
