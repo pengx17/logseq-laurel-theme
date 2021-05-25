@@ -10,12 +10,13 @@ My [Logseq](https://logseq.com) theme based on the work of @PiotrSss's [clean-th
 - CodeMirror theme
 - Content Cards
 - Vintage style query header tags
+- Page preview
 - and many small enhancements/tweaks
 
 The easiest way to adopt this theme is to use jsDelivr CDN and add it to your `custom.css`
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.4.5/custom.css');
+@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.5.0/custom.css');
 ```
 
 Alternatively once Logseq shipped plugins integration, you may also install this theme as a Logseq Plugin.
@@ -25,3 +26,4 @@ Alternatively once Logseq shipped plugins integration, you may also install this
 # Screenshots
 ![white](./white.png)
 ![black](./black.png)
+![preview](./page-preview.png)
