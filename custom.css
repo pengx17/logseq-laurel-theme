@@ -1375,7 +1375,7 @@ html[data-theme="dark"] {
   --ct-mobile-editor-toolbar-background: var(--ct-background);
   --ct-mobile-editor-toolbar-color: var(--ct-page-font-color);
 
-  --ct-topbar-background: var(--ct-background);
+  --ct-topbar-background: transparent
   --ct-topbar-border-color: rgba(0, 0, 0, 0.16);
 }
 
@@ -1669,7 +1669,7 @@ html[data-theme="light"] {
   --ct-mobile-editor-toolbar-background: #e6e6e6;
   --ct-mobile-editor-toolbar-color: var(--ct-page-font-color);
 
-  --ct-topbar-background: rgba(255, 255, 255, 0.6);
+  --ct-topbar-background: transparent;
 
   --ls-scrollbar-foreground-color: rgba(122, 122, 122, 0.6);
   --ls-scrollbar-background-color: rgba(236, 236, 236, 0.6);
