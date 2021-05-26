@@ -45,12 +45,8 @@
   --ct-external-link-text-decoration-hover: none;
   --ct-external-link-border-bottom: 1px solid;
   --ct-external-link-border-bottom-hover: var(--ct-external-link-border-bottom);
-  --ct-external-link-text-decoration-inside-block-reference: var(
-    --ct-external-link-text-decoration
-  );
-  --ct-external-link-text-decoration-inside-block-reference-hover: var(
-    --ct-external-link-text-decoration-hover
-  );
+  --ct-external-link-text-decoration-inside-block-reference: none;
+  --ct-external-link-text-decoration-inside-block-reference-hover: none;
   --ct-page-reference-border-radius: 2px;
   --ct-page-reference-brackets-display: inline;
   --ct-tag-padding: 2px;
@@ -59,7 +55,7 @@
   --ct-tag-opacity-hover: 1;
   --ct-block-reference-padding: 1px 5px;
   --ct-block-reference-padding-inside-another: 4px 5px;
-  --ct-block-reference-font-size: 0.95em;
+  --ct-block-reference-font-size: 0.9em;
   --ct-block-reference-font-family: inherit;
   --ct-block-reference-font-style: inherit;
   --ct-block-reference-font-weight: inherit;
@@ -344,6 +340,11 @@ blockquote {
 
 /* page embed */
 
+.embed, .embed-page, .embed-block {
+  box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.6);
+  padding: 0.75em 0.5em 0.5em;
+}
+
 .embed-page {
   background: var(--ct-page-embed-background);
   border-radius: 0.25rem;
@@ -363,10 +364,10 @@ blockquote {
 }
 
 /* block embed */
-
 .embed-block {
   background: var(--ct-block-embed-background);
   border-radius: 0.25rem;
+  margin-top: 0.2em;
 }
 
 /* todos */
@@ -524,6 +525,20 @@ a.tag:hover {
 .block-ref a.tag:hover {
   background: var(--ct-tag-background-inside-block-reference-hover);
   color: var(--ct-tag-color-inside-block-reference-hover);
+}
+
+/* Block oversize issue */
+
+.ls-block {
+  width: 100%;
+}
+
+.block-content-wrapper {
+  max-width: calc(100% - 40px);
+}
+
+.block-content-wrapper > div.flex-1 {
+  width: 100%;
 }
 
 /* block reference */
@@ -1208,12 +1223,8 @@ html[data-theme="dark"] {
   --ct-external-link-background-inside-block-reference-hover: var(
     --ct-external-link-background-hover
   );
-  --ct-external-link-border-bottom-inside-block-reference: var(
-    --ct-external-link-border-bottom
-  );
-  --ct-external-link-border-bottom-inside-block-reference-hover: var(
-    --ct-external-link-border-bottom-hover
-  );
+  --ct-external-link-border-bottom-inside-block-reference: none;
+  --ct-external-link-border-bottom-inside-block-reference-hover: none;
   --ct-external-link-color-inside-block-reference: var(
     --ct-external-link-color
   );
@@ -1499,12 +1510,8 @@ html[data-theme="light"] {
   --ct-external-link-background-inside-block-reference-hover: var(
     --ct-external-link-background-hover
   );
-  --ct-external-link-border-bottom-inside-block-reference: var(
-    --ct-external-link-border-bottom
-  );
-  --ct-external-link-border-bottom-inside-block-reference-hover: var(
-    --ct-external-link-border-bottom-hover
-  );
+  --ct-external-link-border-bottom-inside-block-reference: none;
+  --ct-external-link-border-bottom-inside-block-reference-hover: none;
   --ct-external-link-color-inside-block-reference: var(
     --ct-external-link-color
   );
