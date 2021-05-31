@@ -4,6 +4,9 @@ My [Logseq](https://logseq.com) theme based on the work of @PiotrSss's [clean-th
 
 <img src="laurel.png" width="100"/>
 
+## Demo
+Visit: https://logseq-laurel-theme.vercel.app/#/page/logseq%20laurel%20theme
+
 ## Features
 
 - Sticky side bar headers with blur effects
@@ -18,7 +21,7 @@ The easiest way to adopt this theme is to use jsDelivr CDN.
 1. Specify `:custom-css-url` in "logseq/config.edn"
 2. Add the following line to your `custom.css`:
   ```css
-  @import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.6.4/custom.css');
+  @import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.7.0/custom.css');
   ```
 
 Alternatively once Logseq shipped plugins integration, you may also install this theme as a Logseq Plugin.
