@@ -1730,7 +1730,7 @@ p {
   line-height: 1;
 }
 
-html.is-electron .cp__header,
+.cp__header,
 .cp__right-sidebar-topbar {
   height: var(--ct-header-height);
 }
