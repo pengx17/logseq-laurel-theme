@@ -1695,11 +1695,6 @@ p {
   margin: 0;
 }
 
-.overflow-y-auto,
-.cp__right-sidebar-inner {
-  transform: translate3d(0, 0, 0);
-}
-
 /* daily note as card */
 
 .white-theme #journals {
@@ -1798,6 +1793,11 @@ p {
 .tippy-tooltip-content > .tippy-wrapper > .blocks-container {
   padding: 0 0.5em;
   min-width: 450px;
+}
+
+/* FIXME: this is a hack to remove scroll passed to scroll bottom issue */
+.tippy-popper[style*="visibility: hidden"] {
+  display: none;
 }
 
 /* Page preview title */
