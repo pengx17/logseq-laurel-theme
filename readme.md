@@ -8,16 +8,18 @@ My [Logseq](https://logseq.com) theme based on the work of @PiotrSss's [clean-th
 
 - Sticky side bar headers with blur effects
 - CodeMirror theme
-- Content Cards
+- Contents in card-style layouts
 - Vintage style query header tags
-- Page preview
+- Page preview style enhancements
 - and many small enhancements/tweaks
 
-The easiest way to adopt this theme is to use jsDelivr CDN and add it to your `custom.css`
+The easiest way to adopt this theme is to use jsDelivr CDN.
 
-```css
-@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.6.2/custom.css');
-```
+1. Specify `:custom-css-url` in "logseq/config.edn"
+2. Add the following line to your `custom.css`:
+  ```css
+  @import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@1.6.3/custom.css');
+  ```
 
 Alternatively once Logseq shipped plugins integration, you may also install this theme as a Logseq Plugin.
 

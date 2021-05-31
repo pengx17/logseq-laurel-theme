@@ -54,8 +54,8 @@
   --ct-tag-opacity: 1;
   --ct-tag-opacity-hover: 1;
   --ct-block-reference-padding: 1px 5px;
-  --ct-block-reference-padding-inside-another: 4px 5px;
-  --ct-block-reference-font-size: 0.9em;
+  --ct-block-reference-padding-inside-another: 0 0 0 0.25em;
+  --ct-block-reference-font-size: 0.95em;
   --ct-block-reference-font-family: inherit;
   --ct-block-reference-font-style: inherit;
   --ct-block-reference-font-weight: inherit;
@@ -569,13 +569,16 @@ a.tag:hover {
   content: "#";
   color: var(--ct-block-reference-hash-color);
   font-size: 12px;
-  vertical-align: text-bottom;
   padding: 0 4px 0 0;
 }
 
 .block-ref .block-ref {
   padding: var(--ct-block-reference-padding-inside-another);
-  border-bottom: var(--ct-block-reference-border-bottom);
+  border-bottom: var(--ct-block-reference-border-bottom-inside-another);
+}
+
+.block-ref .form-checkbox {
+  transform: scale(0.9);
 }
 
 /* nr of references of that block */
@@ -1268,8 +1271,6 @@ html[data-theme="dark"] {
   --ct-tag-color-inside-block-reference: var(--ct-tag-color);
   --ct-tag-color-inside-block-reference-hover: var(--ct-tag-color-hover);
 
-  --ct-block-reference-border-bottom: 1px solid #57ad95;
-  --ct-block-reference-border-bottom-hover: 1px solid #57ad95;
   --ct-block-reference-background: rgba(60, 87, 78, 0.6);
   --ct-block-reference-background-hover: rgba(60, 87, 78, 1);
   --ct-block-reference-color: var(--ct-page-font-color);
