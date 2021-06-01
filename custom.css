@@ -95,6 +95,29 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+/* Some tweaks on making this theme a bit more compact on mobile.
+   Mobile cap is 640px */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  #main-content-container {
+    padding: 0;
+  }
+  .cp__sidebar-main-content > div {
+    padding: 1px 1em 1em 1em;
+    border: none;
+  }
+  a.title h1.title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .custom-query {
+    padding: 0 1rem;
+  }
+}
+
 .cp__sidebar-main-content {
   width: 100%;
 }
@@ -891,6 +914,13 @@ textarea:focus-visible {
 
 [style="height: 24px; margin-top: 22px; float: left;"]:hover {
   opacity: 1;
+}
+
+/* Ordered list */
+ol > li::marker {
+  font-family: Asap;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 /* tables */
