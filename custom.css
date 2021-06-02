@@ -59,6 +59,8 @@
   --ct-block-reference-font-family: inherit;
   --ct-block-reference-font-style: inherit;
   --ct-block-reference-font-weight: inherit;
+  --ct-block-reference-border-bottom: 1px solid #789959;
+  --ct-block-reference-border-bottom-hover: 1px solid #5e7746;
   --ct-mark-border-radius: 2px;
   --ct-italics-font-weight: inherit;
   --ct-italics-font-family: inherit;
@@ -1173,7 +1175,7 @@ html[data-theme="dark"] {
   --ct-page-background: var(--ct-background);
   --ct-page-box-shadow: none;
 
-  --ct-page-font-color: #bbb;
+  --ct-page-font-color: #ccc;
   --ct-page-title-color: var(--ct-page-font-color);
   --ct-page-title-text-shadow: none;
   --ct-heading-color: var(--ct-page-title-color);
@@ -1585,8 +1587,6 @@ html[data-theme="light"] {
   --ct-tag-color-inside-block-reference: var(--ct-tag-color);
   --ct-tag-color-inside-block-reference-hover: var(--ct-tag-color-hover);
 
-  --ct-block-reference-border-bottom: 1px solid #789959;
-  --ct-block-reference-border-bottom-hover: 1px solid #5e7746;
   --ct-block-reference-background: rgba(120, 153, 89, 0.1);
   --ct-block-reference-background-hover: rgba(120, 153, 89, 0.3);
   --ct-block-reference-color: #333;
