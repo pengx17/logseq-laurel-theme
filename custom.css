@@ -990,6 +990,10 @@ tr {
   border-bottom: none;
 }
 
+b, strong {
+  color: var(--ct-bold-color);
+}
+
 /* Settings */
 
 .ui__modal-overlay div {
