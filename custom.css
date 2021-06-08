@@ -630,6 +630,11 @@ mark {
   font-size: inherit;
 }
 
+code, kbd, pre, samp {
+  font-family: var(--ct-code-font-family);
+  font-size: 0.8em;
+}
+
 /* inline code */
 
 :not(pre) > code {
