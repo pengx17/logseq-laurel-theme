@@ -1879,6 +1879,15 @@ p {
   font-size: 1em;
 }
 
+/* TODO: remove me after https://github.com/logseq/logseq/pull/2169 merged */
+.task-status {
+  padding: 2px 4px;
+  opacity: .5;
+  font-size: 85%;
+  margin: 0 2px 0 0;
+  font-weight: 600;
+}
+
 /*
 |xxxxxxxxxxxxxxxxxxxxxxxxxx|
 |xx|     PRIORITIES     |xx|
