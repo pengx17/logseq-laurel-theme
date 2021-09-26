@@ -1,7 +1,6 @@
 /* Credits: github.com/PiotrSss/logseq-clean-themes/blob/main/custom.css */
 
 @import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css");
-@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-clean-themes-alt@1.7.1/code-mirror.css");
 @import url(https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap);
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
@@ -2012,4 +2011,133 @@ a.tag[data-ref="learn new tech" i]::before {
   content: "⚙️";
   margin-right: 0.2em;
   text-shadow: var(--ct-tag-shadow);
+}
+
+[class*="cm-s-"].CodeMirror {
+  background-color: #263238;
+  color: #eeffff;
+}
+
+[class*="cm-s-"] .CodeMirror-gutters {
+  background: #263238;
+  color: #546e7a;
+  border: none;
+}
+
+[class*="cm-s-"] .CodeMirror-guttermarker,
+[class*="cm-s-"] .CodeMirror-guttermarker-subtle,
+[class*="cm-s-"] .CodeMirror-linenumber {
+  color: #546e7a;
+}
+
+[class*="cm-s-"] .CodeMirror-cursor {
+  border-left: 1px solid #ffcc00;
+}
+
+[class*="cm-s-"] div.CodeMirror-selected {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.white-theme [class*="cm-s-"].CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+[class*="cm-s-"] .CodeMirror-line::selection,
+[class*="cm-s-"] .CodeMirror-line > span::selection,
+.white-theme [class*="cm-s-"] .CodeMirror-line > span > span::selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+[class*="cm-s-"] .CodeMirror-line::-moz-selection,
+[class*="cm-s-"] .CodeMirror-line > span::-moz-selection,
+.white-theme [class*="cm-s-"] .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+[class*="cm-s-"] .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[class*="cm-s-"] .cm-keyword {
+  color: #c792ea;
+}
+
+[class*="cm-s-"] .cm-operator {
+  color: #89ddff;
+}
+
+[class*="cm-s-"] .cm-variable-2 {
+  color: #eeffff;
+}
+
+[class*="cm-s-"] .cm-variable-3,
+[class*="cm-s-"] .cm-type {
+  color: #f07178;
+}
+
+[class*="cm-s-"] .cm-builtin {
+  color: #ffcb6b;
+}
+
+[class*="cm-s-"] .cm-atom {
+  color: #f78c6c;
+}
+
+[class*="cm-s-"] .cm-number {
+  color: #ff5370;
+}
+
+[class*="cm-s-"] .cm-def {
+  color: #82aaff;
+}
+
+[class*="cm-s-"] .cm-string {
+  color: #c3e88d;
+}
+
+[class*="cm-s-"] .cm-string-2 {
+  color: #f07178;
+}
+
+[class*="cm-s-"] .cm-comment {
+  color: #546e7a;
+}
+
+[class*="cm-s-"] .cm-variable {
+  color: #f07178;
+}
+
+[class*="cm-s-"] .cm-tag {
+  color: #ff5370;
+}
+
+[class*="cm-s-"] .cm-meta {
+  color: #ffcb6b;
+}
+
+[class*="cm-s-"] .cm-attribute {
+  color: #c792ea;
+}
+
+[class*="cm-s-"] .cm-property {
+  color: #c792ea;
+}
+
+[class*="cm-s-"] .cm-qualifier {
+  color: #decb6b;
+}
+
+[class*="cm-s-"] .cm-variable-3,
+[class*="cm-s-"] .cm-type {
+  color: #decb6b;
+}
+
+[class*="cm-s-"] .cm-error {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff5370;
+}
+
+[class*="cm-s-"] .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
 }
