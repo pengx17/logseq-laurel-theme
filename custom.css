@@ -629,7 +629,10 @@ mark {
   font-size: inherit;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: var(--ct-code-font-family);
   font-size: 0.8em;
 }
@@ -994,7 +997,8 @@ tr {
   border-bottom: none;
 }
 
-b, strong {
+b,
+strong {
   color: var(--ct-bold-color);
 }
 
@@ -1820,6 +1824,17 @@ p {
   flex-flow: column;
 }
 
+.tippy-tooltip-content > .tippy-wrapper.overflow-y-auto > div:last-of-type {
+  overflow: auto;
+  height: -webkit-fill-available;
+  padding: 1.5em 1em 1em;
+  min-width: 450px;
+}
+
+.tippy-tooltip-content > .pr-3 {
+  padding-left: 0.75rem;
+}
+
 .tippy-tooltip-content > .tippy-wrapper > .page-blocks-inner {
   overflow: auto;
   height: -webkit-fill-available;
@@ -1881,7 +1896,7 @@ p {
 /* TODO: remove me after https://github.com/logseq/logseq/pull/2169 merged */
 .task-status {
   padding: 2px 4px;
-  opacity: .5;
+  opacity: 0.5;
   font-size: 85%;
   margin: 0 2px 0 0;
   font-weight: 600;
