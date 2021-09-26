@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/pengx17/logseq-laurel-theme/compare/v1.8.5...v1.8.6) (2021-09-26)
+
+
+### Bug Fixes
+
+* version ([e71b88d](https://github.com/pengx17/logseq-laurel-theme/commit/e71b88ddd1876829b74db2905da1d1e04c2bf12e))
+
 # 1.0.0 (2021-09-26)
 
 
