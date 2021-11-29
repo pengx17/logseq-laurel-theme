@@ -1,3 +1,10 @@
+## [1.8.7](https://github.com/pengx17/logseq-laurel-theme/compare/v1.8.6...v1.8.7) (2021-11-29)
+
+
+### Bug Fixes
+
+* max width issue ([ab46329](https://github.com/pengx17/logseq-laurel-theme/commit/ab463293f6b85739e5b55d3ab1d713044d531011))
+
 ## [1.8.6](https://github.com/pengx17/logseq-laurel-theme/compare/v1.8.5...v1.8.6) (2021-09-26)
 
 
