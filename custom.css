@@ -15,8 +15,6 @@
 ***************************************************************/
 
 :root {
-  --ls-main-content-max-width: 1200px;
-
   --ct-page-border-radius: 5px;
 
   --ct-font-family: "Noto Sans SC", sans-serif;
@@ -127,6 +125,10 @@ body {
   background: var(--ct-background);
 }
 
+.page {
+  margin: 0;
+}
+
 #main-content-container {
   margin-top: 0 !important;
 }
@@ -205,7 +207,8 @@ body {
 ***************************************************************/
 
 .cp__sidebar-main-content > div {
-  padding: 1px 40px 20px 40px;
+  padding: 20px 40px;
+  margin-top: 24px;
   border-radius: var(--ct-page-border-radius);
   background: var(--ct-page-background);
   border: var(--ct-sidebar-item-border);
@@ -214,7 +217,6 @@ body {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  max-width: var(--ls-main-content-max-width);
 }
 
 /* < > buttons */
@@ -266,7 +268,7 @@ h1.title {
   font-style: var(--ct-page-title-font-style);
   color: var(--ct-page-title-color);
   line-height: var(--ct-page-title-line-height);
-  margin-top: 30px;
+  margin: 20px 0;
   text-shadow: var(--ct-page-title-text-shadow, none);
 }
 
