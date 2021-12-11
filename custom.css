@@ -76,7 +76,7 @@
 
   --ct-tag-shadow: 1px 1px rgb(136, 136, 136);
 
-  --ct-header-height: 2.4em;
+  --ct-header-height: 50px;
   --ct-topbar-backdrop: blur(20px);
 }
 
@@ -185,6 +185,7 @@ body {
 
 .cp__header,
 .cp__right-sidebar-topbar {
+  height: var(--ct-header-height);
   backdrop-filter: var(--ct-topbar-backdrop);
   background-color: var(--ct-topbar-background) !important;
 }
@@ -574,6 +575,7 @@ a.tag:hover {
 /* block reference */
 
 .block-ref {
+  display: inline;
   border-radius: 2px;
   padding: var(--ct-block-reference-padding);
   font-size: var(--ct-block-reference-font-size);
@@ -598,7 +600,17 @@ a.tag:hover {
   padding: 0 4px 0 0;
 }
 
+.block-ref div {
+  display: inline;
+  padding: 0 0.2em;
+}
+
+.block-ref .flex.flex-row.justify-between {
+  display: inline;
+}
+
 .block-ref .block-ref {
+  display: inline;
   padding: var(--ct-block-reference-padding-inside-another);
   border-bottom: var(--ct-block-reference-border-bottom-inside-another);
 }
@@ -736,7 +748,7 @@ samp {
 /* title */
 .sidebar-item.content > div > div:first-of-type {
   position: sticky;
-  top: var(--ct-header-height);
+  top: 0;
   padding: 1rem;
   margin: -1rem;
   z-index: 10;
@@ -1767,11 +1779,6 @@ p {
 .extensions__code-lang {
   margin-right: 0.5em;
   line-height: 1;
-}
-
-.cp__header,
-.cp__right-sidebar-topbar {
-  height: var(--ct-header-height);
 }
 
 .cp__header #search-field {
