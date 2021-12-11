@@ -1,3 +1,10 @@
+## [1.8.8](https://github.com/pengx17/logseq-laurel-theme/compare/v1.8.7...v1.8.8) (2021-12-11)
+
+
+### Bug Fixes
+
+* window heading issue ([4fa6c00](https://github.com/pengx17/logseq-laurel-theme/commit/4fa6c00120d63e68d1eda99a476246b3f41be6f3))
+
 ## [1.8.7](https://github.com/pengx17/logseq-laurel-theme/compare/v1.8.6...v1.8.7) (2021-11-29)
 
 
